@@ -1,0 +1,24 @@
+sky:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    host: localhost
+    port: 3306
+    database: sky_take_out
+    username: your_mysql_username
+    password: your_mysql_password
+  alioss:
+    endpoint: oss-cn-beijing.aliyuncs.com
+    access-key-id: your_oss_access_key_id
+    access-key-secret: your_oss_access_key_secret
+    bucket-name: your_bucket_name
+  redis:
+    host: localhost
+    port: 6379
+    database: 1
+  wechat:
+    appid: your_wechat_appid
+    secret: your_wechat_secret
+  ollama:
+    base-url: http://localhost:11434
+    model: deepseek-r1:7b
+    max-tool-calls: 3

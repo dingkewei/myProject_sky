@@ -1,0 +1,122 @@
+.sidebar-container {
+  .el-menu {
+    border: none;
+    height: 100%;
+    width: 100% !important;
+    background: transparent !important;
+  }
+
+  .el-menu-item,
+  .el-submenu > .el-submenu__title {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    line-height: 48px;
+    margin: 0 0 8px;
+    padding: 0 16px !important;
+    border-radius: 16px;
+    color: #d4dcee !important;
+    background: transparent !important;
+    transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+
+    span {
+      color: inherit !important;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    i {
+      margin-right: 10px;
+      color: inherit !important;
+      font-size: 18px;
+    }
+
+    &:hover {
+      color: #ffffff !important;
+      background: rgba(255, 255, 255, 0.08) !important;
+      transform: translateX(2px);
+
+      span {
+        color: #ffffff !important;
+      }
+    }
+  }
+
+  .router-link-active .el-menu-item,
+  .el-menu-item.is-active {
+    color: #172033 !important;
+    background: linear-gradient(135deg, #ffbf3a, #ff8d2d) !important;
+    box-shadow: 0 14px 24px rgba(255, 167, 51, 0.24);
+
+    span,
+    i {
+      color: #172033 !important;
+      font-weight: 700 !important;
+    }
+  }
+
+  .el-submenu.is-active > .el-submenu__title {
+    color: #ffffff !important;
+  }
+
+  .el-submenu {
+    .el-menu-item,
+    > .el-submenu__title {
+      min-width: auto !important;
+      background-color: transparent !important;
+    }
+  }
+
+  .el-submenu__title {
+    font-size: 14px !important;
+
+    .el-submenu__icon-arrow {
+      margin-top: -4px;
+      color: rgba(212, 220, 238, 0.7);
+    }
+  }
+
+  .horizontal-collapse-transition {
+    transition: 0s width ease-in-out, 0s padding-left ease-in-out, 0s padding-right ease-in-out;
+  }
+
+  .scrollbar-wrapper {
+    overflow-x: hidden !important;
+  }
+
+  .el-scrollbar__view {
+    height: 100%;
+  }
+
+  .el-scrollbar__bar.is-vertical {
+    right: 2px;
+  }
+
+  .el-scrollbar__bar.is-horizontal {
+    display: none;
+  }
+}
+
+.hideSidebar {
+  .el-tooltip {
+    padding: 0 !important;
+    text-align: center;
+  }
+
+  .sidebar-container {
+    .el-menu-item,
+    .el-submenu > .el-submenu__title {
+      justify-content: center;
+      padding: 0 !important;
+
+      i {
+        margin-right: 0;
+      }
+    }
+
+    .router-link-active .el-menu-item,
+    .el-menu-item.is-active {
+      background: linear-gradient(135deg, #ffbf3a, #ff8d2d) !important;
+    }
+  }
+}
